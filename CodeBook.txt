@@ -1,0 +1,19 @@
+Code Book for "Getting and Cleaning Data" GCD course project
+
+Study Design:
+
+The resultant tidy data were derived from the UC Irvine "Human Activity Recognition Using Smartphones Data Set" (UCI HAR data) found here: 
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+30 subjects performed 6 activities and smartphone sensor data was gathered.
+
+Tidy Data set:
+
+The Test and training data were aggregated into one large table per the features.txt columns found in the UCI HAR data.
+
+The run_analysis.R script then removes all sensor data columns except for any columns related to the
+standard deviation and mean.  See tidyColumns.txt for column headings.  The values in the table are 
+the averages of a specific measure for each subject performing an activity.
+
+THe tidy data shows 180 observations of 81 variables, See tidyColumns.txt for variable names.
